@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<title>Survey Page</title>
+
+</head>
+
+<body>
+
+<div id="fullcontainer">
+	<header>
+		<h1 id="title">freeCodeCamp's second challenge</h1>
+
+		<p id="description">I built this survey form from scratch. How cool is that?</p>
+	</header>
+	<form id="survey-form">
+<!-- [FORM STARTS] -->
+		
+	<!--[these are input fields]-->
+		<label for="name" id="name-label">
+			<p>Name</p>
+		</label> <!--[label wraps around the text that identifies the input field below it]-->
+     	<input type="text" placeholder="write in your name, please" id="name" required>
+
+    	<label for="email" id="email-label">
+    		<p>Email</p>
+    	</label>
+		<input type="email" placeholder="and your email?" id="email" required>
+
+		<label for="number" id="number-label">
+			<p>Age</p>
+		</label>
+		<input type="number" min=0 max=100  placeholder="how old are you?" id="number" required>
+
+	<!--[dropdown list]-->
+		<label for="dropdown"><p>Identify your species.</p></label>
+
+		<select id="dropdown">
+			<option value="Human">Human</option>
+			<option value="Hooman">Hooman</option>
+			<option value="Howdyman">Howdyman</option>
+			<option value="Jedi">Jedi</option>
+			<option value="Wizard">Wizard</option>
+			<option value="Elf">Elf</option>
+		</select>
+
+	<!--[radio buttons, select 1 option only]-->
+	<!--[a group of buttons]-->
+			
+		<div>
+			<p>Select your preferred honorific.</p>
+		</div>
+		<div>
+			<input type="radio" value="birdperson" id="birdperson" name="btn-group1">
+			<label for="birdperson">
+				<span class="options">Birdperson</span>
+			</label>
+				<br>
+			<input type="radio" value="ricks-bff" id="ricks-bff" name="btn-group1">
+			<label for="ricks-bff">
+				<span class="options">Rick's #1 Best Friend</span>
+			</label>
+				<br>
+			<input type="radio" value="ignorant-slut" id="ignorant-slut" name="btn-group1">
+			<label for="ignorant-slut">
+				<span class="options">Ignorant slut</span>
+			</label>
+				<br>
+			<input type="radio" value="godfather" id="godfather" name="btn-group1">
+			<label for="godfather">
+				<span class="options">The Godfather</span>
+			</label>
+		</div>
+					<!--[what we've learned here:
+						if you want to click on the text
+						to select the button, you need
+						to assign an id to input; &&
+						radio buttons will accept
+						multiple checks if you don't
+						set a name="x" value that is the
+						same to all of them (within
+						the same group)]-->
+
+	<!--[and now some checkboxes]-->
+		<div>
+			<p>And where would you like to travel to?</p>
+		</div>
+		<div>
+			<input type="checkbox" name="narnia" value="narnia" id="narnia">
+			<label for="narnia">
+				<span class="options">Narnia</span>
+			</label>
+				<br>
+			<input type="checkbox" name="hogwarts" value="hogwarts" id="hogwarts">
+			<label for="hogwarts">
+				<span class="options">Hogwarts</span>
+			</label>
+				<br>
+			<input type="checkbox" name="middle-earth" value="middle-earth" id="middle-earth">
+			<label for="middle-earth">
+				<span class="options">Middle-earth</span>
+			</label>
+				<br>
+			<input type="checkbox" name="percy-jackson" value="percy-jackson" id="percy-jackson">
+			<label for="percy-jackson">
+				<span class="options">Wherever the hell Percy Jackson lives</span>
+			</label>
+		</div>
+
+		<div>
+			<p>Below you can enter some additional comments, wubba-lubba-dub-dub.</p>
+		</div>
+		<div>
+			<textarea placeholder="Go on, say it"></textarea>
+		</div>
+
+		<div>
+			<button id="submit">Submit.</button>
+		</div>
+
+
+<!-- [FORM ENDS] -->
+	</form>
+
+</div>
+</body>
+
+</html>
